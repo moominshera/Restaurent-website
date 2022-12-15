@@ -1,0 +1,243 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
+
+body {
+  font-family: "Amatic SC", cursive;
+}
+
+.font-secondary {
+  font-family: "Open Sans", sans-serif;
+}
+
+.mt-6 {
+  margin-top: 6rem !important;
+}
+.fs-large {
+  font-size: 4rem !important;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link:focus {
+  color: black !important;
+  border-bottom: 2px solid #ce1212;
+}
+.nav-link:hover,
+.nav-link:focus {
+  border-bottom: 2px solid #ce1212;
+
+  color: #ce1212;
+}
+
+.icon-1 {
+  color: #ce1212;
+  font-size: 32px;
+  transition: 0.3s;
+  line-height: 0;
+  margin-right: 8px;
+}
+.bi-check2-all {
+  color: #ce1212;
+  font-size: 20px;
+}
+
+.btn-hero {
+  box-shadow: 0 8px 28px rgb(206 18 18 / 20%);
+}
+
+.section-1 {
+  background: url(/images/about.jpg) no-repeat;
+  height: 800px;
+}
+
+.section-1-absolute {
+  left: 8%;
+  bottom: 10%;
+  // padding: 25px 150px;
+}
+.section-1-2 {
+  background: url(/images/about-2.jpg) no-repeat center/cover;
+  height: 304px;
+}
+
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.box-2 i {
+  color: var(--color-primary);
+  margin-bottom: 30px;
+  font-size: 32px;
+  margin-bottom: 30px;
+  background: rgba(206, 18, 18, 0.1);
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+}
+.bg-learn {
+  background: #dd5a5a;
+}
+
+.section-2 {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(/images/stats-bg.jpg) center center;
+  background-size: cover;
+  padding: 100px 0;
+  background-attachment: fixed;
+}
+.color-new {
+  color: #37373f;
+}
+
+.nav-hover:hover {
+  color: #ce1212;
+  border-bottom: 2px solid #ce1212 !important;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  color: black !important;
+  /* background-color: none !important ; */
+}
+.nav-pills .nav-link.active {
+  background-color: white !important ;
+}
+
+.nav-pills .nav-link {
+  background: none;
+  border: 0;
+  border-radius: 0% !important;
+}
+
+.bi-star-fill {
+  color: goldenrod;
+}
+
+.owl-carousel .owl-dots.disabled {
+  display: block !important;
+}
+
+.events-1 {
+  background: url(/images/events-1.jpg) no-repeat center/cover;
+  height: 500px;
+  background-position: unset;
+}
+
+.events-2 {
+  background: url(/images/events-2.jpg) no-repeat center/cover;
+  height: 500px;
+  background-position: unset;
+}
+.events-3 {
+  background: url(/images/events-3.jpg) no-repeat center center;
+  height: 500px;
+  background-position: unset;
+}
+.img-overlay {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.card-1-c img {
+  top: 46%;
+}
+.form-control {
+  border-radius: 0% !important;
+}
+
+.loop .item img {
+  width: 200px !important ;
+  height: auto !important;
+}
+
+#map {
+  height: 300px;
+  /* width: 80vw; */
+}
+
+.icon-address {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  font-size: 24px;
+  line-height: 0;
+  color: #fff;
+  background: #ce1212;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.w-70 {
+  width: 70% !important;
+}
+.social-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.7);
+  margin-right: 10px;
+  transition: 0.3s;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none !important;
+}
+
+
+.card-height{
+height: 440px !important;
+}
+
+.text-message{
+  width: 95%;
+  margin-left: 5px;
+}
+
+
+.w-fit{
+  width: fit-content !important;
+}
+
+@media (max-width:575px){
+  #name-1 ,#name-2 , #name-3, #name-4, #name-5,#name-6{
+    width: 100% !important;
+  }
+}
+
+@media (min-width:1377px){
+  .card-height{
+    height: 388px !important;
+  }
+  }
+
+  @media (min-width:415px) and (max-width:500px){
+    .call-us{
+      margin-left:38px !important
+    }
+  }
+
+.navbar-toggler-icon{
+  background-image: url(/images/toggle-icon-removebg-preview.png) !important;
+  width: 3.5rem !important;
+  height: 3.5rem !important;
+
+}
+
+.close{
+  background-image: url(/images/close.png) !important;
+  width: 3.5rem !important;
+  height: 3.5rem !important;
+  transition: all 0.3s ease-in;
+
+}

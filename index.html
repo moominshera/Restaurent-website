@@ -1,0 +1,931 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Resturant</title>
+  <link rel="stylesheet" href="/sass/main.css">
+  <!-- <link rel="stylesheet" href="/style.css"> -->
+  <!-- Owl carousel min .css link  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous"
+    referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous"
+    referrerpolicy="no-referrer" />
+
+  <!-- LeafLet CSS Link  -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+    crossorigin="" />
+</head>
+<body>
+
+  <!-- Nav Section Starts -->
+  <nav id="navbar-example2"  class="navbar navbar-expand-lg bg-white fixed-top mb-5">
+    <div class="container-fluid">
+    <a class="navbar-brand d-block d-xxl-none ms-0 ms-md-5 " href="#"> <img class="img-fluid" src="/images/Good-food-logo-design-on-transparent-background-PNG.png" alt="" width="90px"></a>
+      <div class="d-block d-md-none">
+        <button class=" btn btn-outline-primary bg-primary text-white rounded-pill font-secondary" type="submit">Book a table</button>
+      </div>
+      <button class="navbar-toggler me-4 me-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon  " onclick="changeIcon(this)" ></span>
+        <!-- <i class="bi bi-x-lg navbar-toggler-icon"></i> -->
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+        <a class="navbar-brand d-none d-xxl-block " href="#"> <img class="img-fluid" src="/images/Good-food-logo-design-on-transparent-background-PNG.png" alt="" width="90px"></a>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active font-secondary fw-bold mx-3 w-fit" aria-current="page" href="#scrollspyHeading1">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link font-secondary fw-bold mx-3  w-fit " href="#scrollspyHeading2" >About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link font-secondary fw-bold mx-3 w-fit" href="#scrollspyHeading3">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link font-secondary fw-bold mx-3 w-fit" href="#scrollspyHeading4">Events</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link font-secondary fw-bold mx-3 w-fit" href="#scrollspyHeading5">Chefs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link font-secondary fw-bold mx-3 w-fit" href="#scrollspyHeading6">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link font-secondary fw-bold mx-3 w-fit" href="#scrollspyHeading7">Contact</a>
+          </li>
+        </ul><form class=" d-none d-lg-flex" role="search">
+          <button class=" btn btn-outline-primary bg-primary text-white rounded-pill font-secondary" type="button">
+            <a href="#scrollspyHeading8"></a> Book a table</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+<!-- </div> -->
+
+  <!-- Nav section Ends -->
+
+  <!-- Scroll Spy starts -->
+  <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-light p-0 rounded-2" tabindex="0">  
+  <!-- Scroll Spy Ends -->
+
+  <!-- Hero Section Starts -->
+  <div class="container-xxl bg-secondary mt-6 pt-5 " id="scrollspyHeading1" >
+    <div class="row mx-0 ">
+      <div class="col-12 col-md-6">
+        <div class="container">
+          <div class="d-flex flex-column justify-content-center align-items-start ms-0 ms-md-5 pt-5">
+            <h1 class="fs-large fw-bold">ENJOY YOUR HEALTHy</h1>
+            <h1 class="fs-large fw-bold">DELICIOUS FOOD</h1>
+            <p class=" fs-5 font-secondary">Sed autem laudantium dolores. Voluptatem itaque ea consequatur eveniet. Eum quas beatae cumque eum
+              quaerat.</p>
+            <div class="d-flex pt-3">
+              <button class=" btn btn-outline-primary bg-primary text-white rounded-pill font-secondary h-50 me-4 btn-hero" type="submit">Book a
+                table</button>
+              <div class="d-flex mb-5">
+                <i class="bi bi-play-circle icon-1"></i>
+                <button class=" btn btn-outline-0 bg-secondary text-dark  rounded-pill font-secondary ps-0" type="submit">Watch a video </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6">
+        <div class="text-center pb-5">
+          <img class="img-fluid" src="/images/hero-img.png" alt="" width="450px">
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!-- Hero Section Ends -->
+
+  <!-- Sectio -1 Starts -->
+  <div id="scrollspyHeading2"> 
+
+  <div class="container mt-5">
+    <div class="text-center">
+      <p class="font-secondary  fw-light text-black-50 ">ABOUT US
+      </p>
+      <h1>LEARN MORE <span class="text-primary">ABOUT US</span></h1>
+    </div>
+    <div class="row mx-0">
+      <div class="col-12 col-md-7 ">
+        <div class=" d-none d-md-block   section-1 mt-3 position-relative">
+          <div class="  bg-white d-flex flex-column justify-content-center text-center position-absolute section-1-absolute  w-75 py-3 ">
+
+            <h5 class="font-secondary  fw-bolder fs-3">BOOK A TABLE</h5>
+            <h5 class="font-secondary text-primary fw-bold fs-3 ">+1 5589 55488 55</h5>
+          </div>
+
+        </div>
+      </div>
+      <div class=" col-12 col-md-5 pb-5 pb-md-none   ">
+        <p class="font-secondary text-dark-50 ms-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+          labore et dolore magna aliqua.</p>
+        <ul>
+          <li class="d-flex align-items-center">
+            <i class="bi bi-check2-all"></i>
+            <p class="font-secondary ps-2 pt-2">Ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </li>
+          <li class="d-flex align-items-center">
+            <i class="bi bi-check2-all"></i>
+            <p class="font-secondary ps-2 pt-2">Duis aute irure dolor in reprehenderit in voluptate velit.</p>
+          </li>
+          <li class="d-flex align-items-center">
+            <i class="bi bi-check2-all"></i>
+            <p class="font-secondary ps-2 pt-2">Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+              voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</p>
+          </li>
+        </ul>
+        <p class="font-secondary text-dark-50 ms-3">Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+          voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident</p>
+        <div class="section-1-2 mt-3">
+          <div class="d-flex justify-content-center align-items-center h-100">
+            <i class="bi bi-play-circle icon-1 fs-1"></i>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!-- Section 1 Ends -->
+
+  <!-- Section 2 Starts -->
+  <div class="container-xxl bg-secondary mb-5 mb-md-0">
+    <div class="container">
+      <div class="row mx-0">
+        <div class="col-12 col-lg-4">
+          <div class="bg-primary my-4">
+            <h3 class="font-secondary text-white p-5"> Why Choose Yummy?</h3>
+            <p class="font-secondary text-white pb-2 px-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+              ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit Asperiores dolores sed et. Tenetur quia eos. Autem tempore
+              quibusdam vel necessitatibus optio ad corporis.</p>
+            <div class="d-flex justify-content-center align-items-center">
+              <button class="d-flex justify-content-center rounded-pill border-0 px-4 py-2 font-secondary bg-learn text-white mb-4">Learn
+                More</button>
+            </div>
+
+          </div>
+        </div>
+        <div class="col-12 col-lg-8 ">
+          <div class="row mx-0">
+            <div class=" col-12 col-md-6 col-lg-4 ">
+
+              <div class=" card-height box-2 bg-white mt-5 text-center d-flex  flex-column justify-content-center align-items-center">
+                <i class="bi bi-clipboard-data p-5 mt-5"></i>
+                <h4 class="font-secondary pb-5 px-2 fw-light">Corporis voluptates officia eiusmod</h4>
+                <p class="
+          font-secondary  px-4 pb-5 pb-md-4">Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class=" card-height box-2 bg-white mt-5 text-center d-flex  flex-column justify-content-center align-items-center">
+                <i class="bi bi-gem p-5 mt-3"> </i>
+                <h4 class="font-secondary pb-5 px-2 fw-light">Ullamco laboris ladore pan</h4>
+                <p class="
+          font-secondary px-4 pb-md-5 pb-lg-4 pt-1">Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>
+              </div>
+            </div>
+            <div class="col-12 col-lg-4 mb-5 mb-md-0 ">
+              <div class=" card-height box-2 bg-white mt-5 text-center d-flex  flex-column justify-content-center align-items-center">
+                <i class="bi bi-inboxes p-5 mt-5"></i>
+                <h4 class="font-secondary pb-5 px-2 fw-light ">Labore consequatur incidid dolore</h4>
+                <p class="
+          font-secondary  px-4 pb-4 ">Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+  <!-- </div> -->
+  <!-- Section 2 ends -->
+
+  <!-- Section 3 Starts -->
+
+  <div class="container-xxl section-2">
+    <div class="container">
+
+      <div class="row mx-0 ps-5">
+        <div class="col-6 col-md-3">
+          <h1 class="text-white font-secondary fw-bold">232</h1>
+          <h4 class="text-light font-secondary fw-bold">Clients</h4>
+        </div>
+        <div class="col-6 col-md-3 text-center">
+          <h1 class="text-white font-secondary fw-bold">512</h1>
+          <h4 class="text-light font-secondary fw-bold">Projects</h4>
+        </div>
+        <div class="col-6 col-md-3 text-start  text-md-center pt-5 pt-md-0">
+          <h1 class="text-white font-secondary fw-bold">1453</h1>
+          <h4 class="text-light font-secondary fw-bold">Hours of Support</h4>
+        </div>
+        <div class="col-6 col-md-3  text-center pt-5 pt-md-0">
+          <h1 class="text-white font-secondary fw-bold">32</h1>
+          <h4 class="text-light font-secondary fw-bold">Workers</h4>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+  <!-- Section 3 Ends -->
+
+  <!-- Section 4 Starts Menu Section  -->
+  <div id="scrollspyHeading3">
+  <div class="container" >
+    <div class="m-5">
+
+      <p class="font-secondary  text-center color-new">Our Menu</p>
+      <h1 class="text-center fs-1">CHECK OUR <span class="text-primary">YUMMY MENU</span> </h1>
+    </div>
+  </div>
+    <ul class="nav nav-pills mb-3 d-flex justify-content-center align-items-center w-100" id="pills-tab" role="tablist">
+      <li class="nav-item " role="presentation">
+        <button class="nav-link active color-new  font-secondary mx-3 border-bottom border-3 nav-hover" id="pills-home-tab" data-bs-toggle="pill"
+          data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Starters</button>
+      </li>
+      <li class="nav-item " role="presentation">
+        <button class="nav-link color-new  font-secondary mx-3 border-bottom border-3 nav-hover" id="pills-profile-tab" data-bs-toggle="pill"
+          data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Breakfast</button>
+      </li>
+      <li class="nav-item " role="presentation">
+        <button class="nav-link color-new  font-secondary mx-3 border-bottom border-3 nav-hover" id="pills-contact-tab" data-bs-toggle="pill"
+          data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Lunch</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link color-new  font-secondary mx-3 border-bottom border-3 nav-hover" id="pills-dinner-tab" data-bs-toggle="pill"
+          data-bs-target="#pills-dinner" type="button" role="tab" aria-controls="pills-dinner" aria-selected="false">Dinner</button>
+      </li>
+    </ul>
+    <div class="tab-content" id="pills-tabContent">
+      <div class="tab-pane fade show active mt-5" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+        <p class="font-secondary  text-center color-new mb-0 mt-2"> MENU</p>
+        <h1 class="text-center fs-1 font-secondary text-primary">Starters </h1>
+        <div class="row mx-0">
+          <div class="col-12 col-sm-6 col-md-4">
+            <div class="d-flex flex-column justify-content-center align-items-center">
+              <img class="img-fluid" src="/images/menu-item-1.png" alt="" width="250px">
+              <p class="font-secondary fw-bold text-dark  fs-3 mt-1 mb-0">Magnam Tiste</p>
+              <a href="" class="font-secondary  color-new fw-bold ">Lorem, deren, trataro, filede, nerada</a>
+              <p class="font-secondary text-primary fw-bold fs-2 ">$5.95</p>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4">
+            <div class="d-flex flex-column justify-content-center align-items-center">
+              <img class="img-fluid" src="/images/menu-item-2.png" alt="" width="250px">
+              <p class="font-secondary fw-bold text-dark  fs-3 mt-1 mb-0">Aut Luia</p>
+              <a href="" class="font-secondary   fw-bold color-new ">Lorem, deren, trataro, filede, nerada</a>
+              <p class="font-secondary text-primary fw-bold fs-2 ">$14.95</p>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="d-flex flex-column justify-content-center align-items-center">
+              <img class="img-fluid" src="/images/menu-item-3.png" alt="" width="250px">
+              <p class="font-secondary fw-bold text-dark  fs-3 mt-1 mb-0">Est Eligendi</p>
+              <a href="" class="font-secondary  color-new fw-bold ">Lorem, deren, trataro, filede, nerada</a>
+              <p class="font-secondary text-primary fw-bold fs-2 ">$8.95</p>
+            </div>
+          </div>
+        </div>
+        <div class="row mx-0">
+          <div class="col-12 col-sm-6 col-md-4">
+            <div class="d-flex flex-column justify-content-center align-items-center">
+              <img class="img-fluid" src="/images/menu-item-4.png" alt="" width="250px">
+              <p class="font-secondary fw-bold text-dark  fs-3 mt-1 mb-0">Magnam Tiste</p>
+              <a href="" class="font-secondary  color-new fw-bold ">Lorem, deren, trataro, filede, nerada</a>
+              <p class="font-secondary text-primary fw-bold fs-2 ">$5.95</p>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4">
+            <div class="d-flex flex-column justify-content-center align-items-center">
+              <img class="img-fluid" src="/images/menu-item-5.png" alt="" width="250px">
+              <p class="font-secondary fw-bold text-dark  fs-3 mt-1 mb-0">Aut Luia</p>
+              <a href="" class="font-secondary   fw-bold color-new ">Lorem, deren, trataro, filede, nerada</a>
+              <p class="font-secondary text-primary fw-bold fs-2 ">$14.95</p>
+            </div>
+          </div>
+          <div class="col-12  col-md-4">
+            <div class="d-flex flex-column justify-content-center align-items-center">
+              <img class="img-fluid" src="/images/menu-item-6.png" alt="" width="250px">
+              <p class="font-secondary fw-bold text-dark  fs-3 mt-1 mb-0">Est Eligendi</p>
+              <a href="" class="font-secondary  color-new fw-bold ">Lorem, deren, trataro, filede, nerada</a>
+              <p class="font-secondary text-primary fw-bold fs-2 ">$8.95</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tab-pane fade mt-5" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+        <p class="font-secondary  text-center color-new mb-0 mt-2"> MENU</p>
+        <h1 class="text-center fs-1 font-secondary text-primary">Breakfast </h1>
+        <div class="row mx-0">
+          <div class="col-4">
+            <div class="d-flex flex-column justify-content-center align-items-center">
+              <img class="" src="/images/menu-item-1.png" alt="" width="250px">
+              <p class="font-secondary fw-bold text-dark  fs-3 mt-1 mb-0">Magnam Tiste</p>
+              <a href="" class="font-secondary  color-new fw-bold ">Lorem, deren, trataro, filede, nerada</a>
+              <p class="font-secondary text-primary fw-bold fs-2 ">$5.95</p>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="d-flex flex-column justify-content-center align-items-center">
+              <img class="" src="/images/menu-item-2.png" alt="" width="250px">
+              <p class="font-secondary fw-bold text-dark  fs-3 mt-1 mb-0">Aut Luia</p>
+              <a href="" class="font-secondary   fw-bold color-new ">Lorem, deren, trataro, filede, nerada</a>
+              <p class="font-secondary text-primary fw-bold fs-2 ">$14.95</p>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="d-flex flex-column justify-content-center align-items-center">
+              <img class="" src="/images/menu-item-3.png" alt="" width="250px">
+              <p class="font-secondary fw-bold text-dark  fs-3 mt-1 mb-0">Est Eligendi</p>
+              <a href="" class="font-secondary  color-new fw-bold ">Lorem, deren, trataro, filede, nerada</a>
+              <p class="font-secondary text-primary fw-bold fs-2 ">$8.95</p>
+            </div>
+          </div>
+        </div>
+        <div class="row mx-0">
+          <div class="col-4">
+            <div class="d-flex flex-column justify-content-center align-items-center">
+              <img class="" src="/images/menu-item-4.png" alt="" width="250px">
+              <p class="font-secondary fw-bold text-dark  fs-3 mt-1 mb-0">Magnam Tiste</p>
+              <a href="" class="font-secondary  color-new fw-bold ">Lorem, deren, trataro, filede, nerada</a>
+              <p class="font-secondary text-primary fw-bold fs-2 ">$5.95</p>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="d-flex flex-column justify-content-center align-items-center">
+              <img class="" src="/images/menu-item-5.png" alt="" width="250px">
+              <p class="font-secondary fw-bold text-dark  fs-3 mt-1 mb-0">Aut Luia</p>
+              <a href="" class="font-secondary   fw-bold color-new ">Lorem, deren, trataro, filede, nerada</a>
+              <p class="font-secondary text-primary fw-bold fs-2 ">$14.95</p>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="d-flex flex-column justify-content-center align-items-center">
+              <img class="" src="/images/menu-item-6.png" alt="" width="250px">
+              <p class="font-secondary fw-bold text-dark  fs-3 mt-1 mb-0">Est Eligendi</p>
+              <a href="" class="font-secondary  color-new fw-bold ">Lorem, deren, trataro, filede, nerada</a>
+              <p class="font-secondary text-primary fw-bold fs-2 ">$8.95</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane fade mt-5" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">
+        <p class="font-secondary  text-center color-new mb-0 mt-2"> MENU</p>
+        <h1 class="text-center fs-1 font-secondary text-primary">Lunch </h1>
+        <div class="row mx-0">
+          <div class="col-4">
+            <div class="d-flex flex-column justify-content-center align-items-center">
+              <img class="" src="/images/menu-item-1.png" alt="" width="250px">
+              <p class="font-secondary fw-bold text-dark  fs-3 mt-1 mb-0">Magnam Tiste</p>
+              <a href="" class="font-secondary  color-new fw-bold ">Lorem, deren, trataro, filede, nerada</a>
+              <p class="font-secondary text-primary fw-bold fs-2 ">$5.95</p>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="d-flex flex-column justify-content-center align-items-center">
+              <img class="" src="/images/menu-item-2.png" alt="" width="250px">
+              <p class="font-secondary fw-bold text-dark  fs-3 mt-1 mb-0">Aut Luia</p>
+              <a href="" class="font-secondary   fw-bold color-new ">Lorem, deren, trataro, filede, nerada</a>
+              <p class="font-secondary text-primary fw-bold fs-2 ">$14.95</p>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="d-flex flex-column justify-content-center align-items-center">
+              <img class="" src="/images/menu-item-3.png" alt="" width="250px">
+              <p class="font-secondary fw-bold text-dark  fs-3 mt-1 mb-0">Est Eligendi</p>
+              <a href="" class="font-secondary  color-new fw-bold ">Lorem, deren, trataro, filede, nerada</a>
+              <p class="font-secondary text-primary fw-bold fs-2 ">$8.95</p>
+            </div>
+          </div>
+        </div>
+        <div class="row mx-0">
+          <div class="col-4">
+            <div class="d-flex flex-column justify-content-center align-items-center">
+              <img class="" src="/images/menu-item-4.png" alt="" width="250px">
+              <p class="font-secondary fw-bold text-dark  fs-3 mt-1 mb-0">Magnam Tiste</p>
+              <a href="" class="font-secondary  color-new fw-bold ">Lorem, deren, trataro, filede, nerada</a>
+              <p class="font-secondary text-primary fw-bold fs-2 ">$5.95</p>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="d-flex flex-column justify-content-center align-items-center">
+              <img class="" src="/images/menu-item-5.png" alt="" width="250px">
+              <p class="font-secondary fw-bold text-dark  fs-3 mt-1 mb-0">Aut Luia</p>
+              <a href="" class="font-secondary   fw-bold color-new ">Lorem, deren, trataro, filede, nerada</a>
+              <p class="font-secondary text-primary fw-bold fs-2 ">$14.95</p>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="d-flex flex-column justify-content-center align-items-center">
+              <img class="" src="/images/menu-item-6.png" alt="" width="250px">
+              <p class="font-secondary fw-bold text-dark  fs-3 mt-1 mb-0">Est Eligendi</p>
+              <a href="" class="font-secondary  color-new fw-bold ">Lorem, deren, trataro, filede, nerada</a>
+              <p class="font-secondary text-primary fw-bold fs-2 ">$8.95</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane fade mt-5" id="pills-dinner" role="tabpanel" aria-labelledby="pills-dinner-tab" tabindex="0">
+        <p class="font-secondary  text-center color-new mb-0 mt-2"> MENU</p>
+        <h1 class="text-center fs-1 font-secondary text-primary">Dinner </h1>
+        <div class="row mx-0">
+          <div class="col-4">
+            <div class="d-flex flex-column justify-content-center align-items-center">
+              <img class="" src="/images/menu-item-1.png" alt="" width="250px">
+              <p class="font-secondary fw-bold text-dark  fs-3 mt-1 mb-0">Magnam Tiste</p>
+              <a href="" class="font-secondary  color-new fw-bold ">Lorem, deren, trataro, filede, nerada</a>
+              <p class="font-secondary text-primary fw-bold fs-2 ">$5.95</p>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="d-flex flex-column justify-content-center align-items-center">
+              <img class="" src="/images/menu-item-2.png" alt="" width="250px">
+              <p class="font-secondary fw-bold text-dark  fs-3 mt-1 mb-0">Aut Luia</p>
+              <a href="" class="font-secondary   fw-bold color-new ">Lorem, deren, trataro, filede, nerada</a>
+              <p class="font-secondary text-primary fw-bold fs-2 ">$14.95</p>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="d-flex flex-column justify-content-center align-items-center">
+              <img class="" src="/images/menu-item-3.png" alt="" width="250px">
+              <p class="font-secondary fw-bold text-dark  fs-3 mt-1 mb-0">Est Eligendi</p>
+              <a href="" class="font-secondary  color-new fw-bold ">Lorem, deren, trataro, filede, nerada</a>
+              <p class="font-secondary text-primary fw-bold fs-2 ">$8.95</p>
+            </div>
+          </div>
+        </div>
+        <div class="row mx-0">
+          <div class="col-4">
+            <div class="d-flex flex-column justify-content-center align-items-center">
+              <img class="" src="/images/menu-item-4.png" alt="" width="250px">
+              <p class="font-secondary fw-bold text-dark  fs-3 mt-1 mb-0">Magnam Tiste</p>
+              <a href="" class="font-secondary  color-new fw-bold ">Lorem, deren, trataro, filede, nerada</a>
+              <p class="font-secondary text-primary fw-bold fs-2 ">$5.95</p>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="d-flex flex-column justify-content-center align-items-center">
+              <img class="" src="/images/menu-item-5.png" alt="" width="250px">
+              <p class="font-secondary fw-bold text-dark  fs-3 mt-1 mb-0">Aut Luia</p>
+              <a href="" class="font-secondary   fw-bold color-new ">Lorem, deren, trataro, filede, nerada</a>
+              <p class="font-secondary text-primary fw-bold fs-2 ">$14.95</p>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="d-flex flex-column justify-content-center align-items-center">
+              <img class="" src="/images/menu-item-6.png" alt="" width="250px">
+              <p class="font-secondary fw-bold text-dark  fs-3 mt-1 mb-0">Est Eligendi</p>
+              <a href="" class="font-secondary  color-new fw-bold ">Lorem, deren, trataro, filede, nerada</a>
+              <p class="font-secondary text-primary fw-bold fs-2 ">$8.95</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- </div> -->
+  <!-- Section 4 Ends Menu Section  -->
+
+  <!-- Section 5 Starts -->
+
+  <div class="container-xxl bg-secondary d-none d-sm-block " id="scrollspyHeading4">
+    <div>
+
+      <p class="font-secondary text-center pt-5">TESTIMONIALS</p>
+      <h1 class=" text-center">What Are They <span class="text-primary ">
+          Saying About Us
+        </span> </h1>
+    </div>
+
+    <!-- Owl carousel  -->
+    <div class="owl-carousel owl-theme">
+      <div class="item">
+        <div class="container">
+          <div class=" mt-5 w-75 d-flex  justify-content-center align-items-center mx-auto pb-5">
+            <div class="border-start border-primary border-3">
+              <div class=" ms-3 ">
+                <h3 class="lh-1 font-secondary fw-normal text-dark fst-italic  fs-5 ">
+                  <span class="  fs-large text-primary fw-semi-bold">"</span>
+                  Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id,
+                  aliquam eget nibh et. Maecen aliquam, risus at semper. <span class="fs-large text-primary">"</span>
+                </h3>
+                <h3 class="font-secondary ">Saul Goodman</h3>
+                <h4 class="font-secondary fs-5">Ceo &amp; Founder</h4>
+                <div class="stars"> <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+              </div>
+            </div>
+            <div class="div">
+              <img class="rounded-pill border border-white border-5 " src="/images/testimonials-1.jpg" alt="" width="200px">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="container">
+          <div class=" mt-5 w-75 d-flex  justify-content-center align-items-center mx-auto pb-5">
+            <div class="border-start border-primary border-3">
+              <div class=" ms-3 ">
+                <h3 class="lh-1 font-secondary fw-normal text-dark fst-italic  fs-5 ">
+                  <span class="  fs-large text-primary fw-semi-bold">"</span>
+                  Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id,
+                  aliquam eget nibh et. Maecen aliquam, risus at semper. <span class="fs-large text-primary"> "</span>
+                </h3>
+                <h3 class="font-secondary ">John Larson</h3>
+                <h4 class="font-secondary fs-5">Entrepreneur</h4>
+                <div class="stars"> <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+              </div>
+            </div>
+            <div class="div">
+              <img class="rounded-pill  border border-white border-5" src="/images/testimonials-4.jpg" alt="" width="200px">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="container">
+          <div class=" mt-5 w-75 d-flex  justify-content-center align-items-center mx-auto pb-5">
+            <div class="border-start border-primary border-3">
+              <div class=" ms-3 ">
+                <h3 class="lh-1 font-secondary fw-normal text-dark fst-italic  fs-5 ">
+                  <span class="  fs-large text-primary fw-semi-bold">"</span>
+                  Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id,
+                  aliquam eget nibh et. Maecen aliquam, risus at semper. <span class="fs-large text-primary">"</span>
+                </h3>
+                <h3 class="font-secondary ">Sara Wilson</h3>
+                <h4 class="font-secondary fs-5">Web Designer</h4>
+                <div class="stars"> <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+              </div>
+            </div>
+            <div class="div">
+              <img class="rounded-pill border border-white border-5 " src="/images/testimonials-2.jpg" alt="" width="200px">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Owl carousel Ends  -->
+  <!-- Section 5 Ends -->
+
+  <!-- Section 6 Starts -->
+
+  
+  <div class="container-xxl mt-4 px-0" >
+    <p class="fs-5 fw-semibold font-secondary text-center text-dark">EVENTS</p>
+    <h1 class="text-center fs-1">SHARE <span class="text-primary">YOUR MOMENTS</span> IN OUR RESTAURENT</h1>
+    <div class="row mx-0">
+      <div class="col-12 col-lg-4 px-0 mb-3 mb-lg-0">
+
+        <div class="events-1">
+          <div class="img-overlay h-100">
+            <div class=" ps-3 d-flex justify-content-end align-items-start h-100 flex-column">
+              <h4 class="font-secondary text-white fw-bold">Custom Parties</h4>
+              <h4 class="font-secondary text-white fw-bold ">$99</h4>
+              <p class="font-secondary text-white fw-light"> Quo corporis voluptas ea ad. Consectetur inventore sapiente ipsum voluptas eos omnis
+                facere. Enim facilis veritatis id est rem repudiandae nulla expedita quas.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-4 px-0 mb-3 mb-lg-0">
+        <div class="events-2">
+          <div class="img-overlay h-100">
+            <div class=" ps-3 d-flex justify-content-end align-items-start h-100 flex-column">
+              <h4 class="font-secondary text-white fw-bold">Special Parties</h4>
+              <h4 class="font-secondary text-white fw-bold ">$199</h4>
+              <p class="font-secondary text-white fw-light"> Quo corporis voluptas ea ad. Consectetur inventore sapiente ipsum voluptas eos omnis
+                facere. Enim facilis veritatis id est rem repudiandae nulla expedita quas.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-4 px-0 mb-3 mb-lg-0">
+        <div class="events-3">
+          <div class="img-overlay h-100">
+            <div class=" ps-3 d-flex justify-content-end align-items-start h-100 flex-column">
+              <h4 class="font-secondary text-white fw-bold">Birthday Parties</h4>
+              <h4 class="font-secondary text-white fw-bold ">$299</h4>
+              <p class="font-secondary text-white fw-light"> Quo corporis voluptas ea ad. Consectetur inventore sapiente ipsum voluptas eos omnis
+                facere. Enim facilis veritatis id est rem repudiandae nulla expedita quas.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- </div> -->
+  <!-- </div> -->
+  <!-- Sectoion 6 Ends -->
+  <!-- Section 7 Starts -->
+<div id="scrollspyHeading5">
+  <div class="contaner-xxl mt-5">
+    <div class="container mt-5 bg-secondary">
+
+    <p class="fs-5 fw-semibold font-secondary text-center text-dark pt-5">CHEFS</p>
+    <h1 class="text-center fs-large">OUR <span class="text-primary">PROFESSIONAL </span> CHEFS</h1>
+      <div class="row">
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card-1 position-relative">
+            <img class="img-fluid" src="/images/chefs-1.jpg" alt="" width="">
+            <div class="card-1-c d-none d-lg-block  d-xxl-none">
+              <img class="position-absolute" src="/images/team-shape.svg" alt="">
+            </div>
+            <div class="font-secondary bg-white pt-3">
+              <h4 class="fw-bold text-center"> Walter White</h4>
+              <p class="fw-light text-center">Master Chef</p>
+              <p class="fst-italic text-center pt-3 pb-5  px-3 text-black-50">Velit aut quia fugit et et. Dolorum ea voluptate vel tempore tenetur
+                ipsa quae aut. Ipsum exercitationem iure minima enim corporis et voluptate.
+
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card-1 position-relative">
+            <img class="img-fluid" src="/images/chefs-2.jpg" alt="" >
+            <div class="card-1-c d-none d-lg-block  d-xxl-none">
+              <img class="position-absolute" src="/images/team-shape.svg" alt="">
+            </div>
+            <div class="font-secondary bg-white pt-3">
+              <h4 class="fw-bold text-center"> Sara Jhonson</h4>
+              <p class="fw-light text-center">Pastisser</p>
+              <p class="fst-italic text-center pt-3 pb-5  px-3 text-black-50 ">Quo esse repellendus quia id. Est eum et accusantium pariatur fugit
+                nihil minima suscipit corporis. Voluptate sed quas reiciendis animi neque sapiente.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-4">
+          <div class="card-1 position-relative">
+            <img class="img-fluid w-100" src="/images/chefs-3.jpg" alt="">
+            <div class="card-1-c d-none d-lg-block  d-xxl-none">
+              <img class="position-absolute" src="/images/team-shape.svg" alt="">
+            </div>
+            <div class="font-secondary bg-white pt-3">
+              <h4 class="fw-bold text-center"> Walter White</h4>
+              <p class="fw-light text-center">Master Chef</p>
+              <p class="fst-italic text-center pt-3 pb-5  px-3 text-black-50">Velit aut quia fugit et et. Dolorum ea voluptate vel tempore tenetur
+                ipsa quae aut. Ipsum exercitationem iure minima enim corporis et voluptate.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <!-- Section 7 Ends -->
+
+  <!-- Section 8 Starts -->
+
+
+  <div class="container-xxl my-5" id="scrollspyHeading6">
+    <p class="fs-5 fw-semibold font-secondary text-center text-dark pt-5"  id="scrollspyHeading8">BOOK A TABLE</p>
+    <h1 class="text-center fs-large">BOOK <span class="text-primary">YOUR STAY </span> WITH US</h1>
+    <div class="container">
+      <div class="row mx-0 bg-secondary">
+        <div class=" col-12 col-md-4 ps-0 pe-0 pe-md-1">
+          <img class="img-fluid" src="/images/reservation.jpg" alt="" >
+        </div>
+        <div class="col-12 col-md-8">
+          <div class=" d-block d-sm-flex justify-content-around w-100 pt-5 ">
+            <input type="text" name="name" class="form-control  font-secondary w-25 mb-2 mb-sm-0" id="name-1" placeholder="Your Name" data-rule="minlen:4"
+              data-msg="Please enter at least 4 chars">
+            <input type="text" name="name" class="form-control font-secondary w-25  mb-2 mb-sm-0" id="name-2" placeholder="Your Email" data-rule="minlen:4"
+              data-msg="Please enter at least 4 chars">
+            <input type="text" name="name" class="form-control font-secondary w-25 mb-0" id="name-3" placeholder="Your Phone" data-rule="minlen:4"
+              data-msg="Please enter at least 4 chars">
+          </div>
+          <div class=" d-block d-sm-flex justify-content-around  pt-2 pt-sm-5 ">
+            <input type="date" name="name" class="form-control  font-secondary w-25 mb-2 mb-sm-0" id="name-4" placeholder="Date">
+            <input type="text" name="name" class="form-control font-secondary w-25 mb-2 mb-sm-0" id="name-5" placeholder="TIME">
+            <input type="number" name="name" class="form-control font-secondary w-25 mb-2 mb-sm-0" id="name-6" placeholder="Number">
+          </div>
+          <div class="form-group mt-3 ps-0 ps-sm-3 ps-md-4 text-center text-message">
+            <textarea class="form-control font-secondary " name="message" rows="5" placeholder="Message"></textarea>
+          </div>
+          <div class="text-center pt-5 pb-5 ">
+            <button class="font-secondary text-white bg-primary rounded-pill border-0 px-5 py-3" type="submit">Book a Table</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- </div> -->
+  <!-- Section 8 Ends -->
+
+  <!-- Section 9 Starts -->
+
+  <div class="container-xxl bg-secondary">
+    <div class="py-3">
+
+      <p class="fs-5 fw-semibold font-secondary text-center text-dark pt-5 ">GALLERY</p>
+      <h1 class="text-center fs-large">CHECK <span class="text-primary">OUR GALLERY </span> </h1>
+    </div>
+    <div class="container">
+      <!-- Owl CAROUSEL STARTS -->
+      <div class=" loop owl-carousel owl-theme">
+        <div class="item">
+          <img src="/images/gallery-2.jpg" alt="">
+        </div>
+        <div class="item"><img src="/images/gallery-4 (1).jpg" alt=""></div>
+        <div class="item"><img src="/images/gallery-5.jpg" alt=""></div>
+        <div class="item"><img src="/images/gallery-6.jpg" alt=""></div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Owl CAROUSEL ENDS -->
+
+  <!-- Section 9 Ends -->
+
+  <!-- Section 10 Starts -->
+  <div id="scrollspyHeading7">
+
+  <div class="container-xxl">
+    <p class="fs-5 fw-semibold font-secondary text-center text-dark pt-5 ">CONTACT</p>
+    <h1 class="text-center fs-1">NEED HELP? <span class="text-primary">CONTACT US </span> </h1>
+  </div>
+  <div class="container">
+    <div class="my-5" id="map"></div>
+  </div>
+  <div class="container px-0 mb-5">
+    <div class="row mx-0">
+      <div class="col-12 col-md-6">
+        <div class="bg-secondary d-flex justify-content-center align-items-center py-3">
+          <div class="div">
+            <i class=" icon bi bi-map flex-shrink-0 icon-address"></i>
+          </div>
+          <div class="pt-3">
+            <h3 class="font-secondary text-dark fw-bold">Our address</h3>
+            <p class="font-secondary "> A108 Adam Street, New York, NY 535022</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6  mt-3 mt-md-0">
+        <div class="bg-secondary d-flex justify-content-center align-items-center py-3">
+          <div class="div">
+            <i class="  icon bi bi-envelope flex-shrink-0 icon-address"></i> 
+          </div>
+          <div class="pt-3">
+            <h3 class="font-secondary text-dark fw-bold">Email Us</h3>
+            <p class="font-secondary "> A108 Adam Street, New York, NY 535022</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container pt-3 px-0">
+      <div class="row mx-0">
+        <div class="col-12 col-md-6">
+          <div class="bg-secondary">
+            <div class=" call-us bg-secondary d-flex justify-content-start justify-content-md-center align-items-center py-3 w-70  ps-2 ps-sm-4 ps-md-0 ms-0 ms-sm-5 ms-md-0  ps-sm-0 ">
+              <div class="div">
+                <i class=" icon bi bi-telephone flex-shrink-0 icon-address ms-0 ms-sm-1 ms-md-0"></i>
+              </div>
+              <div class="pt-3">
+                <h3 class="font-secondary text-dark fw-bold">Call Us</h3>
+                <p class="font-secondary "> +1 5589 55488 55</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 my-3 my-md-0">
+          <div class="bg-secondary d-flex justify-content-center align-items-center py-3">
+            <div class="div">
+              <i class=" icon bi bi-share flex-shrink-0 icon-address"></i>
+            </div>
+            <div class="pt-3">
+              <h3 class="font-secondary text-dark fw-bold">Opening Hours</h3>
+              <p class="font-secondary "> Mon-Sat: 11AM - 23PM; Sunday: Closed</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- </div> -->
+  <!-- Section 10 Ends -->
+
+<!-- Section 11 Starts  -->
+<footer>
+  
+  <div class="container-xxl bg-success">
+    <div class="container py-5">
+      <div class="">
+        <div class="row">
+          <div class="col-12 col-md-3 d-flex mt-5  ">
+            <div>
+              
+              <i class="bi bi-geo-alt icon text-secondary fs-3"></i>
+            </div>
+            <div>
+              
+              <ul class="font-secondary  text-secondary ps-2">
+                Address 
+                <li class=""><a href="" class="text-secondary fw-light">A108 Adam Street</a></li>
+                <li class=""><a href="" class="text-secondary fw-light">New York, NY 535022 - US</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-12 col-md-3 d-flex mt-5  ">
+            <div>
+              
+              <i class="bi bi-telephone icon text-secondary fs-3"></i>
+            </div>
+            <div>
+              
+              <ul class="font-secondary  text-secondary ps-2">
+          Reservations
+                <li class=""><a href="" class="text-secondary fw-light"> <span class="fw-bold"> Phone: </span>+1 5589 55488 55
+                </a></li>
+                <li class=""><a href="" class="text-secondary fw-light"> <span class="fw-bold"> Email: </span>info@example.com 
+                </a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-12 col-md-3 d-flex mt-5  ">
+            <div>
+              
+              <i class="bi bi-clock icon text-secondary fs-3"></i>
+            </div>
+            <div>
+              
+              <ul class="font-secondary  text-secondary ps-2">
+                Opening Hours
+                <li class=""><a href="" class="text-secondary fw-light"> <span class="fw-bold">Mon-Sat: 11AM</span> - 23PM</a></li>
+                <li class=""><a href="" class="text-secondary fw-light">Sunday: Closed</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-12 col-md-3 d-flex mt-5  ">
+            <div>
+              
+              <i class="bi bi-geo-alt icon text-secondary fs-3"></i>
+            </div>
+            <div>
+              
+              <ul class="font-secondary  text-secondary ps-2">
+                Follow Us
+                <div class="social-links d-flex justify-content-between">
+                   <a href="#" class="twitter  text-secondary "><i class="bi bi-twitter"></i></a> 
+                   <a href="#" class="facebook text-secondary "><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="instagram text-secondary "><i class="bi bi-instagram"></i></a>
+                     <a href="#" class="linkedin text-secondary "><i class="bi bi-linkedin"></i></a></div>
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+      
+    </div>
+  </div>
+</footer>
+</div>
+
+</div>
+<!-- </div> -->
+  <!-- Section 11 Ends -->
+
+
+
+
+
+  <!-- Owl carousel jquery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+    integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous"
+    referrerpolicy="no-referrer"></script>
+
+  <!-- Bootstrap Js link  -->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  <!-- Script link for leaflet -->
+  <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js" integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+    crossorigin=""></script>
+
+  <!-- Owl carousel min. js link   -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous"
+    referrerpolicy="no-referrer"></script>
+
+
+  <!-- Custom Js -->
+  <script src="/index.js"></script>
+</body>
+
+</html>
+
